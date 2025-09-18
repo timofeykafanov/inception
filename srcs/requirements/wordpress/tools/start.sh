@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# # Wait for MariaDB to be ready
-# until mysql -h mariadb -u ${MYSQL_USER} -p${MYSQL_PASSWORD} -e "SELECT 1" &> /dev/null; do
-#     echo "Waiting for MariaDB..."
-#     sleep 3
-# done
-
 # Navigate to WordPress directory
 cd /var/www/html
 

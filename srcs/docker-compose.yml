@@ -44,13 +44,13 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/tkafanov/data/wordpress
+      device: $WP_DATA_PATH
   mariadb_data:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: /home/tkafanov/data/mariadb
+      device: $DB_DATA_PATH
 
 networks:
   inception_network:
